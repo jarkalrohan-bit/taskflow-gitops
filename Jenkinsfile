@@ -52,7 +52,7 @@ pipeline {
             }
         }
  
-        stage('Commit and Push') {
+        stage('Commit and Push GitOps Changes') {
             steps {
                 withCredentials([usernamePassword(
                     credentialsId: "gitCred",
